@@ -76,13 +76,11 @@ final class OrderJuiceViewController: UIViewController {
             try juiceMaker.makeJuice(orderedJuice)
             updateStockLabel()
             showSuccessAlert(name: orderedJuice.name)
-        } catch JuiceMakerError.outOfStock {
-            print(JuiceMakerError.outOfStock.message)
+        } catch let juiceMakerError as JuiceMakerError {
+            print(juiceMakerError.message)
             showFailAlert()
-        } catch JuiceMakerError.fruitError {
-            print(JuiceMakerError.fruitError.message)
         } catch {
-            print("알 수 없는 오류가 발생했습니다.")
+            print("알수없는 오류")
         }
     }
     

@@ -8,6 +8,7 @@
 enum JuiceMakerError: Error {
     case outOfStock
     case fruitError
+
     
     var message: String {
         switch self {

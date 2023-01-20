@@ -11,7 +11,7 @@ enum JuiceMenu  {
     var receipe: [Fruit: Int] {
         switch self {
         case .strawberryJuice:
-            return [.strawberry: 16]
+            return [.strawberry: FruitCount.strawberry]
         case .bananaJuice:
             return [.banana: 2]
         case .kiwiJuice:
@@ -45,4 +45,11 @@ enum JuiceMenu  {
             return "망키쥬스"
         }
     }
+}
+
+enum FruitCount {
+    static let strawberry = 16
+    static let banana = 2
+    static let pineapple = 2
+    
 }
