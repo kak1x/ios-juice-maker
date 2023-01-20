@@ -90,7 +90,6 @@
 - 쥬스 주문 시 재고가 부족하다면 재고가 부족하다는 alert창 실행.
   
 <img src = "https://user-images.githubusercontent.com/114971172/210932923-06b5dc53-2833-4327-bdc4-b26fe0684091.gif" width="600">
-<br>
 
 ### 3. 재고 수정 alert 창 예 / 아니오 버튼 실행
 - 예 버튼 클릭시 재고수정 화면으로 이동
